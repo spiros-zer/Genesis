@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{83BAD38A-4FD5-A549-596E-3BBFD06986A8}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Genesis",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
