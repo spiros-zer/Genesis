@@ -41,7 +41,7 @@
     <ul>
       <li>Physics had <em>nothing</em> to do with it. In static mesh view by right clicking the hair mesh you could unling the clothing data and that would fix it, thus clothes clothes clothes.</li>
       <li>There were more hair meshes &mdash; when painting you will can see the clothing data in the Clothing tab &mdash; so I played around a bit with the brush and watching some animations to reach the result i wanted.</li>
-      <li>Unrelated to hair, but the <strong>ribbons of the swords were rigid </strong> af so I made them clothes, to behave as such.</li>
+      <li><strike>Unrelated to hair, but the <strong>ribbons of the swords were rigid </strong> af so I made them clothes, to behave as such.</strike> <em>didn't do that because original swords will be removed someway; until it is decided they will remain as is</em></li>
     </ul>
   </section>
 </main>
