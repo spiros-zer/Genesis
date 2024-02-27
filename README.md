@@ -33,6 +33,22 @@
           In short, <strike>I hate her</strike> she is a little difficult. The physics assets have issues and need to be remade from scratch, skeleton is ubalanced &mdash; one hand has metacarpals the other no, armor, hair with bones, animations are not that pretty after all; I am sure if I keep looking i will find more &mdash;
         </p>
       </section>
+      <section id="section-findings--animation-pipeline">
+        <h4>
+          Animation Pipeline
+        </h4>
+        <p>
+          At some point here will be a clear pipeline to make them but so far:
+        </p>
+        <ul>
+          <li>
+            Good IK Rig and good IK Retargetter gives very good animation.
+          </li>
+          <li>
+            All anim_notifs for events, particles, emitters and whatnot carry over the retargetting 🥳🥳🥳
+          </li>
+        </ul>
+      </section>
     </section>
   </main>
 </body>
