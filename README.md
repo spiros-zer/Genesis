@@ -1,6 +1,20 @@
 <header>
   <h1>Genesis</h1>
   <p>Character generation using UE5 and Paragon assets</p>
+  <section id="section-index">
+    <h2>Index</h2>
+    <ol>
+      <li>
+        <a href="section-end-goal">End Goal</a>
+      </li>
+      <li>
+        <a href="section-workflow">Workflow</a>
+      </li>
+      <li>
+        <a href="section-findings">Findings</a>
+      </li>
+    </ol>
+  </section>
 </header>
 
 <body>
@@ -10,7 +24,15 @@
         End Goal
       </h2>
       <p>
-      How to put it ... currently there is no goal. Will I create a huge animation pack for Manny, will I put them to some Paragon character? I am not really sure. <em>I think that huge animation pack for Manny is the best course, but how am I supposed to fdit all these in this repo here</em> 🤔
+      <strike>How to put it ... currently there is no goal. Will I create a huge animation pack for Manny, will I put them to some Paragon character? I am not really sure. <em>I think that huge animation pack for Manny is the best course, but how am I supposed to fdit all these in this repo here</em> 🤔</strike> A huge library of animations for Manny. All of them will have fx, sounds, anim_notifs setup. It will be categorized <em>per weapon of character</em>. For example a folder of Countess that will have her weapons and the animations executed with said weapons. 
+      </p>
+    </section>
+    <section id="section-workflow">
+      <h2>
+        Workflow
+      </h2>
+      <p>
+        On the repo should be <strong>only</strong> Manny animations. On base station there will be all the Paragon characters. In the future &mdash; once the characters' setup is completed &mdash; I will create a different repo to put them all inside.
       </p>
     </section>
     <section id="section-findings">
