@@ -47,6 +47,40 @@
           <strike>So far, Countess and Aurora</strike> The humanoids of Paragon follow the UE4 Mannequin skeleton archetype &mdash; of 3 spines, no finger metacarpals, no twists, etc. <em>ofc</em> there are exceptions to that due to weapon modifications, anatomy blah blah blah &mdash;. <strong>But</strong> I will still go with making a retargetter for Manny who comes with a UE4 mannequin rtg anyways. 
         </p>
       </section>
+      <section id="section-fx">
+        <h2>
+          FX
+        </h2>
+        <p>
+          Since the Paragon assets were using the <strong>Cascade Particle System</strong>, they had to be converted to <strong>Niagara Particle System</strong>. As I was told by my good friend <a href="">Stylianos</a>, Unreal has the amazing plugin Cascade To Niagara Converter which gets the job done, <strong>BUT</strong> the converted FX have issues and some won't play at all 😀. So we need to fix that <em>obviosuly</em>.
+        </p>
+        <h3>
+          Warnings
+        </h3>
+        <h4>
+          Emitter Properties
+        </h4>
+        <ul>
+          <li>
+            ✔ <strong>The emitter is GPU and is using dynamic bounds mode. please update the Emitter or System properties otherwise bounds may be incorrect &mdash;</strong> by following this <a href="https://www.youtube.com/watch?v=wZva4oxr-nc">video</a> in the <em>Emitter</em> section change <em>Calculatye Bounds Mode</em> to <em>Fixed</em>.
+          </li>
+          <li>
+            ❌ <strong>Skipped converting cascade module "ParticleModuleVectorFieldLocal". Reason: failed to find converter script fot module &mdash;</strong>
+          </li>
+          <li>
+            ❌ <strong>Skipped converting cascade module "ParticleModuleVectorFieldBase". Reason: failed to find converter script fot module &mdash;</strong>
+          </li>
+          <li>
+            ❌ <strong>Skipped converting cascade module "ParticleModuleAttractorBase". Reason: failed to find converter script fot module &mdash;</strong>
+          </li>
+          <li>
+            ❌ <strong>Cascade light specified a spawn fraction but this mode is not supported by the asset converter &mdash;</strong>
+          </li>
+        </ul>
+        <h3>
+          Errors
+        </h3>
+      </section>
       <section id="section-findings--Aurora">
         <h4>
           Aurora Issues
