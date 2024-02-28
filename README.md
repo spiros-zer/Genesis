@@ -52,7 +52,7 @@
           FX
         </h2>
         <p>
-          <strike>Since the Paragon assets were using the <strong>Cascade Particle System</strong>, they had to be converted to <strong>Niagara Particle System</strong>. As I was told by my good friend <a href="">Stylianos</a>, Unreal has the amazing plugin Cascade To Niagara Converter which gets the job done, <strong>BUT</strong> the converted FX have issues and some won't play at all 😀. So we need to fix that <em>obviosuly</em></strike> Due to the many unsolvable issues that piled up (see bellow) I will be doing Niagara only to the FX that are 100% no issue working.
+          Since the Paragon assets were using the <strong>Cascade Particle System</strong>, they had to be converted to <strong>Niagara Particle System</strong>. As I was told by my good friend <a href="">Stylianos</a>, Unreal has the amazing plugin Cascade To Niagara Converter which gets the job done, <strong>BUT</strong> the converted FX have issues and some won't play at all 😀. So we need to fix that <em>obviosuly</em>.
         </p>
         <h3>
           Warnings
@@ -80,14 +80,6 @@
         <h3>
           Errors
         </h3>
-        <h4>
-          Emitter Properties
-        </h4>
-        <ul>
-          <li>
-            ❌ <strong>Static variable is not set to a consistent value. Please ensure that all values are equal. Parameter: Particles.DynamicMaterialparameterChannelMask - Node: Map Set Pin: Particles.DynamicmaterialParamaterChannelMask &mdash;</strong> by following this <a href="https://www.youtube.com/watch?v=wZva4oxr-nc">video</a> in the <em>Emitter</em> section change <em>Calculatye Bounds Mode</em> to <em>Fixed</em>.
-          </li>
-        </ul>
       </section>
       <section id="section-findings--Aurora">
         <h4>
