@@ -35,27 +35,24 @@
           <li>Good IK Rig and good IK Retargetter gives very good animation.</li>
           <li>All anim_notifs for events, particles, emitters and whatnot carry over the retargetting 🥳🥳🥳</li>
         </ul>
-        <h4>Aurora Issues</h4>
-        <p>
-          In short, <strike>I hate her</strike> she is a little difficult. The physics assets have issues and need to be remade from scratch, skeleton is ubalanced &mdash; one hand has metacarpals the other no, armor, hair with bones, animations are not that pretty after all; I am sure if I keep looking i will find more &mdash;
-        </p>
       </section>
       <section id="section-meshes">
         <h2>Meshes</h2>
-        <p>
-          So in order to make the animations bound to the weapon rather than the character, I need to extract the weapon mesh from the character mesh. Now, Epic again does not want to make my life easier, but alas I found a way to do it:
+        <p>So in order to make the animations bound to the weapon rather than the character, I need to extract the weapon mesh from the character mesh. Now, Epic again does not want to make my life easier, but alas I found a way to do it:</p>
           <ol>
-            <li>Make <code>Static Mesh</code> from the <code>Skeletal Mesh</code> &mdash; this step is optional if a static mesh already exists</li>
-            <li>From the <strong>Asset Actions Export</strong> it and choose as save type <strong>gltf</strong> &mdash; the reason it is important to go with .gltf and not just export as .fb is that the materials are not exported and after tedious googling and some testing .gltf is the way. It is important to jnote that at some point the material quality was very low so in the export setting syou need to set the <strong>Default Material bake Size to 2048 x 2048</strong></li>
-            <li>The it is <em>Blender</em> time. In blender you need to import the .gltf file, delete the character mesh and <strong>center the point where you want the character to touch the weapon</strong> &mdash; will update on dual handed weapons later</li>
-            <li>Export from blender as .fbx and then importi it in UE5</li>
+            <li><strike>Make Static Mesh> from the Skeletal Mesh &mdash; this step is optional if a static mesh already exists.</strike> Locate the <code>Skeletal Mesh</code> of the character.</li>
+            <li>From the <strong>Asset Actions Export</strong> it and choose as save type <code>.gltf</code> &mdash; the reason for going with <code>.gltf</code> is that the materials are not exported plus most peeps online suggest using that. <strike>It is important to note that at some point the material quality was very low so in the export setting set the <strong>Default Material bake Size to 2048 x 2048</strong>.</strike></li>
+            <li>It is <em>Blender</em> time. In Blender you need to import the <code>.gltf</code> file, delete the character mesh and appropriately modify the weapon. A more in-depth guide on this process for <strong>one-handed weapons</strong> can be found <a href="">here</a>. Dual handed weapons coming soon.</li>
+            <li>Export from blender as .fbx and then import it in UE5.</li>
           </ol>
+        <p>
+          The process that follows when you import it back to UE is very important and has its own <a href="">section</a>.
         </p>
       </section>
       <section id="section-fx">
         <h2>FX</h2>
         <p>
-          <strike>Since the Paragon assets were using the <strong>Cascade Particle System</strong>, they had to be converted to <strong>Niagara Particle System</strong>. As I was told by my good friend <a href="">Stylianos</a>, Unreal has the amazing plugin Cascade To Niagara Converter which gets the job done, <strong>BUT</strong> the converted FX have issues and some won't play at all 😀. So we need to fix that <em>obviosuly</em></strike> Due to the many unsolvable issues that piled up (see bellow) I will be doing Niagara only to the FX that are 100% no issue working.
+          <strike>Since the Paragon assets were using the <strong>Cascade Particle System</strong>, they had to be converted to <strong>Niagara Particle System</strong>. As I was told by my good friend <a href="">Stylianos</a>, Unreal has the amazing plugin Cascade To Niagara Converter which gets the job done, <strong>BUT</strong> the converted FX have issues and some won't play at all 😀. So we need to fix that <em>obviosuly</em></strike> Due to the many unsolvable issues that piled up (see bellow) I will be doing Niagara only to the FX that are 100% no issue (warning or error) working.
         </p>
         <h3>Warnings</h3>
         <h4>Emitter Properties</h4>
