@@ -1,0 +1,3 @@
+[submodule "Plugins/Portable3DToPixels"]
+	path = Plugins/Portable3DToPixels
+	url = https://github.com/spiros-zer/Portable3DToPixels
